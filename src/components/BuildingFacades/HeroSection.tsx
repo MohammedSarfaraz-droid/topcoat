@@ -4,7 +4,7 @@ const HeroSection = () => {
 	return (
 		<section className="relative flex h-[60vh] min-h-105 items-center justify-center overflow-hidden">
 			<Image
-				src="/building-facade.jpg"
+				src="/Images/building-facade.jpg"
 				alt="Modern building with textured concrete facade panels"
 				fill
 				priority

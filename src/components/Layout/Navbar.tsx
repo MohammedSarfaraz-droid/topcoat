@@ -65,7 +65,7 @@ export default function Navbar() {
 						aria-label={`${siteConfig.name} Home`}
 					>
 						<Image
-							src="/logo.png"
+							src="/Images/logo.png"
 							alt={siteConfig.name}
 							width={220}
 							height={96}
@@ -158,7 +158,7 @@ export default function Navbar() {
 				<div className="flex items-center px-8 pt-8 pb-6 border-b border-white/6">
 					<Link href="/" onClick={closeMobileMenu} aria-label={`${siteConfig.name} Home`}>
 						<Image
-							src="/logo.png"
+							src="/Images/logo.png"
 							alt={siteConfig.name}
 							width={160}
 							height={70}

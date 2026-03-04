@@ -5,9 +5,9 @@ import Image from "next/image";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const galleryImages = [
-	{ src: "/custom-concrete.jpg", alt: "Custom decorative concrete with artisanal finish" },
-	{ src: "/spraying-action.jpg", alt: "Specialist applying decorative surface treatment" },
-	{ src: "/artisan-working.jpg", alt: "Artisan hand-finishing a decorative concrete texture" },
+	{ src: "/Images/custom-concrete.jpg", alt: "Custom decorative concrete with artisanal finish" },
+	{ src: "/Images/spraying-action.jpg", alt: "Specialist applying decorative surface treatment" },
+	{ src: "/Images/artisan-working.jpg", alt: "Artisan hand-finishing a decorative concrete texture" },
 ];
 
 const ProjectGallery = () => {

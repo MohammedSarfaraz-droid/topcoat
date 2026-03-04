@@ -19,7 +19,7 @@ const Footer = () => (
         <div>
           <Link href="/" className="inline-flex mb-4" aria-label={`${siteConfig.name} Home`}>
             <Image
-              src="/logo.png"
+              src="/Images/logo.png"
               alt={siteConfig.name}
               width={220}
               height={96}

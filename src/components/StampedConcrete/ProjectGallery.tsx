@@ -5,9 +5,9 @@ import Image from "next/image";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const galleryImages = [
-	{ src: "/stamped-concrete.jpg", alt: "Beautiful stamped concrete patio with natural stone pattern" },
-	{ src: "/residential-floor.jpg", alt: "Decorative concrete flooring in luxury residence" },
-	{ src: "/custom-concrete.jpg", alt: "Custom stamped concrete with copper tones" },
+	{ src: "/Images/stamped-concrete.jpg", alt: "Beautiful stamped concrete patio with natural stone pattern" },
+	{ src: "/Images/residential-floor.jpg", alt: "Decorative concrete flooring in luxury residence" },
+	{ src: "/Images/custom-concrete.jpg", alt: "Custom stamped concrete with copper tones" },
 ];
 
 const ProjectGallery = () => {

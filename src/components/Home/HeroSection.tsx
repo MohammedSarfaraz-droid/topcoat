@@ -8,7 +8,7 @@ const HeroSection = () => (
 	<section className="relative flex min-h-screen items-center justify-center overflow-hidden">
 		<div className="absolute inset-0">
 			<Image
-				src="/hero-epoxy.jpg"
+				src="/Images/Herow.jpeg"
 				alt="Luxury epoxy showroom floor with golden reflections and dramatic lighting"
 				fill
 				priority
