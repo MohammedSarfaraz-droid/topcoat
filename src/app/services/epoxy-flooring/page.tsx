@@ -5,7 +5,7 @@ import Details from "@/components/EpoxyFlooring/Details";
 import HeroSection from "@/components/EpoxyFlooring/HeroSection";
 import ProjectGallery from "@/components/EpoxyFlooring/ProjectGallery";
 import WhyChooseUs from "@/components/EpoxyFlooring/WhyChooseUs";
-import OtherServices from "@/components/Sections/OtherServices";
+import OtherServices from "@/components/Home/OtherServices";
 
 const EpoxyFlooringPage = () => {
 	return (

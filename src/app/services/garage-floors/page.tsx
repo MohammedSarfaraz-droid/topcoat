@@ -1,6 +1,6 @@
 import Footer from "@/components/Layout/Footer";
 import Navbar from "@/components/Layout/Navbar";
-import OtherServices from "@/components/Sections/OtherServices";
+import OtherServices from "@/components/Home/OtherServices";
 import CTASection from "@/components/GarageFloors/CTASection";
 import Details from "@/components/GarageFloors/Details";
 import HeroSection from "@/components/GarageFloors/HeroSection";

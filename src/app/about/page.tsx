@@ -1,16 +1,20 @@
 import Footer from "@/components/Layout/Footer";
 import Navbar from "@/components/Layout/Navbar";
-import AboutSection from "@/components/Sections/AboutSection";
-import CTASection from "@/components/Sections/CTASection";
-import ExperienceSection from "@/components/Sections/ExperienceSection";
+import HeroSection from "@/components/About/HeroSection";
+import StorySection from "@/components/About/StorySection";
+import MissionVisionSection from "@/components/About/MissionVisionSection";
+import CoreValuesSection from "@/components/About/CoreValuesSection";
+import CTASection from "@/components/Home/CTASection";
 
 const AboutPage = () => {
 	return (
 		<>
 			<Navbar />
-			<main className="pt-28 md:pt-32">
-				<AboutSection />
-				<ExperienceSection />
+			<main className="bg-[#14161A] pt-24">
+				<HeroSection />
+				<StorySection />
+				<MissionVisionSection />
+				<CoreValuesSection />
 				<CTASection />
 			</main>
 			<Footer />

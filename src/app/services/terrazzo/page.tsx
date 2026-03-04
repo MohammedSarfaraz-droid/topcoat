@@ -1,6 +1,6 @@
 import Footer from "@/components/Layout/Footer";
 import Navbar from "@/components/Layout/Navbar";
-import OtherServices from "@/components/Sections/OtherServices";
+import OtherServices from "@/components/Home/OtherServices";
 import CTASection from "@/components/Terrazzo/CTASection";
 import Details from "@/components/Terrazzo/Details";
 import HeroSection from "@/components/Terrazzo/HeroSection";

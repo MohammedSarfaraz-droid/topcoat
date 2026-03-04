@@ -1,7 +1,7 @@
 import Footer from "@/components/Layout/Footer";
 import Navbar from "@/components/Layout/Navbar";
-import CTASection from "@/components/Sections/CTASection";
-import ServicesSection from "@/components/Sections/ServiceSection";
+import CTASection from "@/components/Home/CTASection";
+import ServicesSection from "@/components/Home/ServiceSection";
 
 const ServicesPage = () => {
 	return (

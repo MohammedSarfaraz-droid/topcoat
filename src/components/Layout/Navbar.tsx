@@ -70,7 +70,7 @@ export default function Navbar() {
 							width={220}
 							height={96}
 							priority
-							className="h-14 w-auto sm:h-16 md:h-20 lg:h-24"
+							className="h-11 w-auto sm:h-12 lg:h-14"
 						/>
 					</Link>
 
@@ -162,7 +162,7 @@ export default function Navbar() {
 							alt={siteConfig.name}
 							width={160}
 							height={70}
-							className="h-12 w-auto"
+							className="h-10 w-auto"
 						/>
 					</Link>
 				</div>
