@@ -11,10 +11,10 @@ export const siteConfig = {
   services: [
     { name: "Epoxy Flooring", slug: "epoxy-flooring" },
     { name: "Terrazzo", slug: "terrazzo" },
-    { name: "Building's Facade", slug: "buildings-facade" },
+    { name: "Building Facades", slug: "building-facades" },
     { name: "Garage Floors", slug: "garage-floors" },
     { name: "Stamped Concrete", slug: "stamped-concrete" },
-    { name: "Other Services", slug: "other-services" },
+    { name: "Custom Decorative Concrete", slug: "custom-decorative-concrete" },
   ] as ServiceNavItem[],
   serviceHighlights: [
     {

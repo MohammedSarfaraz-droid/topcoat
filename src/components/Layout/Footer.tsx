@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
 
 import { siteConfig } from "@/Config/Site";
 
 const companyLinks = [
   { label: "About Us", href: "/about" },
-  { label: "Portfolio", href: "/#portfolio" },
+  { label: "Portfolio", href: "/portfolio" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -93,6 +93,26 @@ const Footer = () => (
             <div className="flex items-start gap-3 text-[#818898] text-sm">
               <MapPin className="w-4 h-4 text-primary mt-0.5" />
               <span>{siteConfig.address}</span>
+            </div>
+            <div className="flex items-center gap-3 pt-2">
+              <a
+                href={siteConfig.social.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow us on Instagram"
+                className="group flex h-10 w-10 items-center justify-center rounded-sm border border-white/10 text-white/40 transition-all duration-300 hover:border-primary/50 hover:bg-primary/5 hover:text-primary"
+              >
+                <Instagram className="size-4 transition-transform duration-300 group-hover:scale-110" />
+              </a>
+              <a
+                href={siteConfig.social.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow us on Facebook"
+                className="group flex h-10 w-10 items-center justify-center rounded-sm border border-white/10 text-white/40 transition-all duration-300 hover:border-primary/50 hover:bg-primary/5 hover:text-primary"
+              >
+                <Facebook className="size-4 transition-transform duration-300 group-hover:scale-110" />
+              </a>
             </div>
           </div>
         </div>

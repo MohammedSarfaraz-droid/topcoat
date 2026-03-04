@@ -16,9 +16,9 @@ type NavLink = {
 
 const navLinks: NavLink[] = [
 	{ label: "Home", href: "/" },
-	{ label: "Services", href: "/#services" },
-	{ label: "Portfolio", href: "/#portfolio" },
 	{ label: "About", href: "/about" },
+	{ label: "Services", href: "/services" },
+	{ label: "Portfolio", href: "/portfolio" },
 	{ label: "Contact", href: "/contact" },
 ];
 
@@ -54,8 +54,8 @@ export default function Navbar() {
 				className={cn(
 					"fixed top-0 left-0 right-0 z-50 w-full transition-all duration-500",
 					isScrolled
-						? "border-b border-primary/10 bg-[#0d0f12f2] py-3 backdrop-blur-md"
-						: "bg-transparent py-5"
+						? " bg-[#0d0f12f2] py-3 backdrop-blur-md"
+						: "bg-transparent py-5 "
 				)}
 			>
 				<div className="container mx-auto flex items-center justify-between px-4">
@@ -100,7 +100,7 @@ export default function Navbar() {
 					{/* Hamburger toggle */}
 					<button
 						type="button"
-						className="relative z-[70] flex h-10 w-10 items-center justify-center text-white lg:hidden"
+						className="relative z-70 flex h-10 w-10 items-center justify-center text-white lg:hidden"
 						aria-label={isMobileOpen ? "Close navigation menu" : "Open navigation menu"}
 						aria-expanded={isMobileOpen}
 						aria-controls="mobile-navigation"
@@ -131,7 +131,7 @@ export default function Navbar() {
 				ref={overlayRef}
 				onClick={closeMobileMenu}
 				className={cn(
-					"fixed inset-0 z-[55] bg-black/60 backdrop-blur-sm transition-opacity duration-500 lg:hidden",
+					"fixed inset-0 z-55 bg-black/60 backdrop-blur-sm transition-opacity duration-500 lg:hidden",
 					isMobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
 				)}
 				aria-hidden="true"
@@ -144,18 +144,18 @@ export default function Navbar() {
 				aria-modal="true"
 				aria-label="Mobile navigation"
 				className={cn(
-					"fixed top-0 left-0 z-[60] h-full w-[300px] sm:w-[340px] lg:hidden",
+					"fixed top-0 left-0 z-60 h-full w-75 sm:w-85 lg:hidden",
 					"flex flex-col",
-					"bg-[#0d0f12] border-r border-white/[0.06]",
+					"bg-[#0d0f12] border-r border-white/6",
 					"transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)]",
 					isMobileOpen ? "translate-x-0" : "-translate-x-full"
 				)}
 			>
 				{/* Subtle vertical gradient accent line */}
-				<div className="absolute top-0 right-0 h-full w-px bg-gradient-to-b from-transparent via-primary/40 to-transparent" />
+				<div className="absolute top-0 right-0 h-full w-px bg-linear-to-b from-transparent via-primary/40 to-transparent" />
 
 				{/* Top logo area */}
-				<div className="flex items-center px-8 pt-8 pb-6 border-b border-white/[0.06]">
+				<div className="flex items-center px-8 pt-8 pb-6 border-b border-white/6">
 					<Link href="/" onClick={closeMobileMenu} aria-label={`${siteConfig.name} Home`}>
 						<Image
 							src="/logo.png"
@@ -181,13 +181,13 @@ export default function Navbar() {
 								"group relative flex items-center gap-4 py-4 px-2",
 								"text-[15px] font-sans font-medium tracking-[0.12em] uppercase",
 								"text-white/50 hover:text-white",
-								"border-b border-white/[0.06] last:border-b-0",
+								"border-b border-white/6 last:border-b-0",
 								"transition-all duration-300",
 								isMobileOpen ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"
 							)}
 						>
 							{/* Hover accent */}
-							<span className="absolute left-0 top-1/2 -translate-y-1/2 h-0 w-[2px] bg-primary rounded-full transition-all duration-300 group-hover:h-6" />
+							<span className="absolute left-0 top-1/2 -translate-y-1/2 h-0 w-0.5 bg-primary rounded-full transition-all duration-300 group-hover:h-6" />
 							{/* Index number */}
 							<span className="text-[11px] font-mono text-white/20 group-hover:text-primary/60 transition-colors duration-300 w-5">
 								{String(i + 1).padStart(2, "0")}
@@ -232,7 +232,7 @@ export default function Navbar() {
 						transitionDelay: isMobileOpen ? `${100 + (navLinks.length + 1) * 60}ms` : "0ms",
 					}}
 					className={cn(
-						"px-8 py-6 border-t border-white/[0.06]",
+						"px-8 py-6 border-t border-white/6",
 						"transition-all duration-300",
 						isMobileOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
 					)}
@@ -273,7 +273,7 @@ export default function Navbar() {
 						</a>
 
 						{/* Divider */}
-						<div className="h-px flex-1 bg-white/[0.06]" />
+						<div className="h-px flex-1 bg-white/6" />
 
 						{/* Phone number */}
 						<a
