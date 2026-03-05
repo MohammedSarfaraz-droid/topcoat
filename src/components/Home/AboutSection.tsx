@@ -17,7 +17,7 @@ const AboutSection = () => {
 	const { ref, isVisible } = useScrollAnimation<HTMLElement>();
 
 	return (
-		<section className="bg-[#14161a] py-24" ref={ref}>
+		<section className="bg-[#14161a] py-24 overflow-hidden" ref={ref}>
 			<div className="container mx-auto px-4">
 				<div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
 					<div
@@ -27,7 +27,7 @@ const AboutSection = () => {
 					>
 						<div className="relative overflow-hidden rounded-lg">
 							<Image
-								src="/Images/artisan-working.jpg"
+								src="/Images/building-facade2.jpeg"
 								alt="Skilled artisan applying decorative concrete coating with precision tools"
 								width={900}
 								height={1000}

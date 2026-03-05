@@ -10,7 +10,7 @@ const AboutPage = () => {
 	return (
 		<>
 			<Navbar />
-			<main className="bg-[#14161A] pt-24">
+			<main className="bg-[#14161A]">
 				<HeroSection />
 				<StorySection />
 				<MissionVisionSection />

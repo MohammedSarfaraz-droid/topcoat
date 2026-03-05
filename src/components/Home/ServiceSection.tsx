@@ -25,7 +25,7 @@ const services: Service[] = [
     {
         title: "Terrazzo",
         desc: "Elegant, timeless terrazzo flooring for luxury interiors — from corporate lobbies to hospitality venues.",
-        image: "/Images/terrazzo-interior.jpg",
+        image: "/Images/terrazzo2.jpeg",
         path: "/services/terrazzo",
         animationDelayClass: "delay-100",
     },
