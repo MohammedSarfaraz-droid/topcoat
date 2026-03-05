@@ -48,7 +48,7 @@ const StorySection = () => {
 				>
 					<div className="relative h-112.5 w-full overflow-hidden rounded-xl">
 						<Image
-							src="/Images/artisan-working.jpg"
+							src="/Images/About.jpeg"
 							alt="TopCoat artisan crafting a decorative floor"
 							fill
 							className="object-cover"

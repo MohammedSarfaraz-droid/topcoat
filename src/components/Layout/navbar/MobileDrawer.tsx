@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Facebook, Instagram, Phone } from "lucide-react";
 
 import { siteConfig } from "@/Config/Site";
@@ -14,6 +15,15 @@ type MobileDrawerProps = {
 };
 
 export function MobileDrawer({ isOpen, links, onClose }: MobileDrawerProps) {
+	const pathname = usePathname();
+
+	const isActiveLink = (href: string) => {
+		if (href === "/") {
+			return pathname === "/";
+		}
+		return pathname === href || pathname.startsWith(`${href}/`);
+	};
+
 	return (
 		<div
 			id="mobile-navigation"
@@ -43,32 +53,49 @@ export function MobileDrawer({ isOpen, links, onClose }: MobileDrawerProps) {
 			</div>
 
 			<nav className="flex flex-1 flex-col gap-0 px-5 py-3 [@media(max-height:760px)]:px-4 [@media(max-height:760px)]:py-2">
-				{links.map((link, index) => (
-					<Link
-						key={link.label}
-						href={link.href}
-						onClick={onClose}
-						style={{
-							transitionDelay: isOpen ? `${100 + index * 60}ms` : "0ms",
-						}}
-						className={cn(
-							"group relative flex items-center gap-3 px-2 py-2.5 [@media(max-height:760px)]:py-2",
-							"text-sm font-sans font-medium tracking-widest uppercase",
-							"text-white/50 hover:text-white",
-							"border-b border-white/6 last:border-b-0",
-							"transition-all duration-300",
-							isOpen ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"
-						)}
-					>
-						<span className="absolute left-0 top-1/2 h-0 w-0.5 -translate-y-1/2 rounded-full bg-primary transition-all duration-300 group-hover:h-5" />
-						<span className="w-5 text-[10px] font-mono text-white/20 transition-colors duration-300 group-hover:text-primary/60">
-							{String(index + 1).padStart(2, "0")}
-						</span>
-						<span className="group-hover:translate-x-1 transition-transform duration-300">
-							{link.label}
-						</span>
-					</Link>
-				))}
+				{links.map((link, index) => {
+					const isActive = isActiveLink(link.href);
+
+					return (
+						<Link
+							key={link.label}
+							href={link.href}
+							onClick={onClose}
+							aria-current={isActive ? "page" : undefined}
+							style={{
+								transitionDelay: isOpen ? `${100 + index * 60}ms` : "0ms",
+							}}
+							className={cn(
+								"group relative flex items-center gap-3 rounded-sm px-2 py-2.5 [@media(max-height:760px)]:py-2",
+								"text-sm font-sans font-medium tracking-widest uppercase",
+								"border-b border-white/6 last:border-b-0",
+								"transition-all duration-300 active:scale-95",
+								isActive
+									? "bg-primary/10 text-primary"
+									: "text-white/50 hover:text-white hover:bg-white/5",
+								isOpen ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"
+							)}
+						>
+							<span
+								className={cn(
+									"absolute left-0 top-1/2 w-0.5 -translate-y-1/2 rounded-full bg-primary transition-all duration-300",
+									isActive ? "h-5" : "h-0 group-hover:h-5"
+								)}
+							/>
+							<span
+								className={cn(
+									"w-5 text-[10px] font-mono transition-colors duration-300",
+									isActive ? "text-primary/80" : "text-white/20 group-hover:text-primary/60"
+								)}
+							>
+								{String(index + 1).padStart(2, "0")}
+							</span>
+							<span className="transition-transform duration-300 group-hover:translate-x-1">
+								{link.label}
+							</span>
+						</Link>
+					);
+				})}
 
 				<div
 					style={{

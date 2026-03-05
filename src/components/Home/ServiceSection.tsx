@@ -18,21 +18,21 @@ const services: Service[] = [
     {
         title: "Epoxy Flooring",
         desc: "Industrial-grade epoxy systems with mirror-finish quality for commercial and industrial spaces.",
-        image: "/Images/epoxy-flooring.jpeg",
+        image: "/Images/Epoxy-flooring.jpeg",
         path: "/services/epoxy-flooring",
         animationDelayClass: "delay-0",
     },
     {
         title: "Terrazzo",
         desc: "Elegant, timeless terrazzo flooring for luxury interiors — from corporate lobbies to hospitality venues.",
-        image: "/Images/terrazzo2.jpeg",
+        image: "/Images/terrazzo.jpeg",
         path: "/services/terrazzo",
         animationDelayClass: "delay-100",
     },
     {
         title: "Building Facades",
         desc: "Innovative vertical concrete finishes that redefine modern architectural aesthetics.",
-        image: "/Images/building-facade2.jpeg",
+        image: "/Images/Building-Facade-Renovation.jpeg",
         path: "/services/building-facades",
         animationDelayClass: "delay-200",
     },
@@ -46,7 +46,7 @@ const services: Service[] = [
     {
         title: "Stamped Concrete",
         desc: "Decorative patterns and textures that bring artistry to outdoor patios and walkways.",
-        image: "/Images/stamped-concrete2.jpeg",
+        image: "/Images/Lawn.jpeg",
         path: "/services/stamped-concrete",
         animationDelayClass: "delay-500",
     },

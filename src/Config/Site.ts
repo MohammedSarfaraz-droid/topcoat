@@ -20,19 +20,19 @@ export const siteConfig = {
     {
       title: "Epoxy Flooring",
       description: "Industrial-grade epoxy systems with mirror-finish quality for commercial and industrial spaces.",
-      image: "/Images/hero-epoxy.jpg",
+      image: "/Images/Epoxy-flooring.jpeg",
       slug: "epoxy-flooring",
     },
     {
       title: "Terrazzo",
       description: "Elegant, timeless terrazzo flooring for luxury interiors — from corporate lobbies to hospitality venues.",
-      image: "/Images/terrazzo-interior.jpg",
+      image: "/Images/terrazzo.jpeg",
       slug: "terrazzo",
     },
     {
       title: "Building Facades",
       description: "Innovative vertical concrete finishes that redefine modern architectural aesthetics.",
-      image: "/Images/building-facade.jpg",
+      image: "/Images/building-facade2.jpeg",
       slug: "building-facades",
     },
     {
@@ -44,13 +44,13 @@ export const siteConfig = {
     {
       title: "Stamped Concrete",
       description: "Decorative patterns and textures that bring artistry to outdoor patios and walkways.",
-      image: "/Images/stamped-concrete.jpg",
+      image: "/Images/stampedconcrete.jpeg",
       slug: "stamped-concrete",
     },
     {
       title: "Custom Decorative Concrete",
       description: "Bespoke polymer-modified surfaces tailored to your unique design vision.",
-      image: "/Images/custom-concrete.jpg",
+      image: "/Images/custom-concrete2.jpeg",
       slug: "custom-decorative-concrete",
     },
   ] as ServiceHighlight[],
