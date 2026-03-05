@@ -139,7 +139,7 @@ export function MobileDrawer({ isOpen, links, onClose }: MobileDrawerProps) {
 				</p>
 				<div className="flex items-center gap-3 [@media(max-height:760px)]:gap-2.5">
 					<a
-						href="https://instagram.com"
+						href="https://www.instagram.com/top.coat.artistry"
 						target="_blank"
 						rel="noopener noreferrer"
 						aria-label="Follow us on Instagram"
@@ -153,7 +153,7 @@ export function MobileDrawer({ isOpen, links, onClose }: MobileDrawerProps) {
 						<Instagram className="size-4 group-hover:scale-110 transition-transform duration-300" />
 					</a>
 					<a
-						href="https://facebook.com"
+						href="https://www.facebook.com/top.coat.artistry?mibextid=ZbWKwL"
 						target="_blank"
 						rel="noopener noreferrer"
 						aria-label="Follow us on Facebook"
