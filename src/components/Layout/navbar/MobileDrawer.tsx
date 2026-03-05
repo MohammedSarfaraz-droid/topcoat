@@ -43,7 +43,7 @@ export function MobileDrawer({ isOpen, links, onClose }: MobileDrawerProps) {
 			<div className="flex items-center border-b border-white/6 px-6 pt-5 pb-4 [@media(max-height:760px)]:px-5 [@media(max-height:760px)]:pt-4 [@media(max-height:760px)]:pb-3">
 				<Link href="/" onClick={onClose} aria-label={`${siteConfig.name} Home`}>
 					<Image
-						src="/Images/TopCoat-logo-white.png"
+						src="/Images/TopCoat-white-logo.png"
 						alt={siteConfig.name}
 						width={160}
 						height={70}

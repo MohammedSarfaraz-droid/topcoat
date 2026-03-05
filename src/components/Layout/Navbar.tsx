@@ -54,7 +54,7 @@ export default function Navbar() {
 						aria-label={`${siteConfig.name} Home`}
 					>
 						<Image
-							src="/Images/TopCoat-logo-white.png"
+							src="/Images/TopCoat-white-logo.png"
 							alt={siteConfig.name}
 							width={300}
 							height={112}
