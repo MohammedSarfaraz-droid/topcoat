@@ -7,7 +7,7 @@ const ServicesPage = () => {
 	return (
 		<>
 			<Navbar />
-			<main className="pt-18 md:pt-20 bg-[#0D0F12]">
+			<main className=" md:pt-20 bg-[#0D0F12]">
 				<ServicesSection />
 				<CTASection />
 			</main>

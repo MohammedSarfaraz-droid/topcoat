@@ -18,7 +18,7 @@ const services: Service[] = [
     {
         title: "Epoxy Flooring",
         desc: "Industrial-grade epoxy systems with mirror-finish quality for commercial and industrial spaces.",
-        image: "/Images/Epoxy-flooring.jpeg",
+        image: "/Images/Epoxy-Flooring.jpeg",
         path: "/services/epoxy-flooring",
         animationDelayClass: "delay-0",
     },

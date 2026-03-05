@@ -20,7 +20,7 @@ export const siteConfig = {
     {
       title: "Epoxy Flooring",
       description: "Industrial-grade epoxy systems with mirror-finish quality for commercial and industrial spaces.",
-      image: "/Images/Epoxy-flooring.jpeg",
+      image: "/Images/Epoxy-Flooring.jpeg",
       slug: "epoxy-flooring",
     },
     {

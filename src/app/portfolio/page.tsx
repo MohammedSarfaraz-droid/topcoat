@@ -7,7 +7,7 @@ const PortfolioPage = () => {
 	return (
 		<>
 			<Navbar />
-			<main className="pt-18 md:pt-20 bg-[#0D0F12]">
+			<main className="pt-8 md:pt-20 bg-[#0D0F12]">
 				<PortfolioSection />
 				<CTASection />
 			</main>
