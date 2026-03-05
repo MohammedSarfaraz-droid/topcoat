@@ -54,12 +54,12 @@ export default function Navbar() {
 						aria-label={`${siteConfig.name} Home`}
 					>
 						<Image
-							src="/Images/logo.png"
+							src="/Images/TopCoat-logo-white.png"
 							alt={siteConfig.name}
-							width={220}
-							height={96}
+							width={300}
+							height={112}
 							priority
-							className="h-11 w-auto sm:h-12 lg:h-14"
+							className="h-13 w-auto sm:h-14 lg:h-20"
 						/>
 					</Link>
 

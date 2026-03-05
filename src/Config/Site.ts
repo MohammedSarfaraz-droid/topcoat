@@ -7,7 +7,7 @@ export const siteConfig = {
   url: "https://topcoat-llc.net",
   phone: "+1 201 315 263 3",
   email: "sales@topcoat-llc.net",
-  address: "312 Fair Lawn Ave, Fair Lawn, NJ 07410, United States",
+  address: "312 Fair Lawn Ave, Fair Lawn, NJ 07410",
   services: [
     { name: "Epoxy Flooring", slug: "epoxy-flooring" },
     { name: "Terrazzo", slug: "terrazzo" },

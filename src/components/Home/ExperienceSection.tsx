@@ -54,7 +54,7 @@ const ExperienceSection = () => {
                         Over Two Decades of{" "}
                         <span className="text-gradient-copper">Surface Mastery</span>
                     </h2>
-                    <p className="text-muted-foreground max-w-2xl mx-auto font-sans leading-relaxed">
+                    <p className="text-white/90 max-w-2xl mx-auto font-sans leading-relaxed">
                         From polymer-modified concrete to vertical surface applications, we&apos;ve perfected the art
                         of spraying, troweling, and brushing — delivering flawless finishes across commercial,
                         industrial, and artistic projects.

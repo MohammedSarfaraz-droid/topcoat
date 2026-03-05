@@ -19,11 +19,11 @@ const Footer = () => (
         <div>
           <Link href="/" className="inline-flex mb-4" aria-label={`${siteConfig.name} Home`}>
             <Image
-              src="/Images/logo.png"
+              src="/Images/TopCoat-logo-white.png"
               alt={siteConfig.name}
-              width={220}
-              height={96}
-              className="h-20 w-auto"
+              width={300}
+              height={112}
+              className="h-13 w-auto sm:h-14 lg:h-20"
             />
           </Link>
           <p className="text-[#818898] text-sm leading-relaxed mb-6">
