@@ -29,19 +29,19 @@ const WhyChooseUs = () => {
 						<h2 className="mb-6 font-serif text-3xl font-bold text-white/90">
 							Why Choose Our <span className="text-gradient-copper">Building Facades</span>
 						</h2>
-						<p className="mb-4 font-sans leading-relaxed text-muted-foreground">
+						<p className="mb-4 font-sans leading-relaxed text-white/70">
 							Your building&apos;s exterior is the first thing people see, and it deserves more than
 							a coat of paint. We design and install vertical concrete facade systems that genuinely
 							transform a structure — giving it character, depth, and a finish that holds up year
 							after year regardless of the weather.
 						</p>
-						<p className="mb-4 font-sans leading-relaxed text-muted-foreground">
+						<p className="mb-4 font-sans leading-relaxed text-white/70">
 							We work with architects, property owners, and contractors to select textures,
 							colors, and systems that suit the building&apos;s design intent. Whether the goal is a
 							clean minimal finish or a bold expressive look, we have the materials and skill to
 							deliver it with precision.
 						</p>
-						<p className="mb-8 font-sans leading-relaxed text-muted-foreground">
+						<p className="mb-8 font-sans leading-relaxed text-white/70">
 							Our polymer-modified concrete systems are lightweight, weather-resistant, and
 							built to protect the structure beneath. With over two decades of experience, we
 							know what it takes to get a facade installation done right — from surface prep

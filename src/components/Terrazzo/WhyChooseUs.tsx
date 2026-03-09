@@ -29,19 +29,19 @@ const WhyChooseUs = () => {
 						<h2 className="mb-6 font-serif text-3xl font-bold text-white/90">
 							Why Choose Our <span className="text-gradient-copper">Terrazzo</span>
 						</h2>
-						<p className="mb-4 font-sans leading-relaxed text-muted-foreground">
+						<p className="mb-4 font-sans leading-relaxed text-white/70">
 							Terrazzo has been used in prestigious buildings for centuries, and the reason is
 							simple — nothing else combines that level of design freedom with the kind of
 							durability that outlasts the building itself. We bring that same craft to every
 							project, whether it&apos;s a corporate lobby, a church, or a luxury home.
 						</p>
-						<p className="mb-4 font-sans leading-relaxed text-muted-foreground">
+						<p className="mb-4 font-sans leading-relaxed text-white/70">
 							Our team designs each terrazzo floor from scratch using your chosen aggregates,
 							colors, and divider strip layouts. The result is a completely unique surface
 							that can&apos;t be replicated with any other material — rich, seamless, and
 							polished to a mirror-like finish.
 						</p>
-						<p className="mb-8 font-sans leading-relaxed text-muted-foreground">
+						<p className="mb-8 font-sans leading-relaxed text-white/70">
 							Beyond aesthetics, terrazzo is one of the most hygienic and low-maintenance
 							floor types available. Its seamless surface harbors no bacteria or allergens,
 							making it a smart choice for healthcare, education, and hospitality environments

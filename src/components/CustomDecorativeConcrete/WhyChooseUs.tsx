@@ -29,19 +29,19 @@ const WhyChooseUs = () => {
 						<h2 className="mb-6 font-serif text-3xl font-bold text-white/90">
 							Why Choose Our <span className="text-gradient-copper">Custom Concrete</span>
 						</h2>
-						<p className="mb-4 font-sans leading-relaxed text-muted-foreground">
+						<p className="mb-4 font-sans leading-relaxed text-white/70">
 							Not every space fits a standard finish, and that&apos;s exactly where our custom
 							decorativeoncrete work comes in. We sit down with you, understand your space,
 							your aesthetic, and your practical needs — then we build a surface that reflects
 							all of that with real craftsmanship.
 						</p>
-						<p className="mb-4 font-sans leading-relaxed text-muted-foreground">
+						<p className="mb-4 font-sans leading-relaxed text-white/70">
 							From hand-applied micro-toppings and acid-stained floors to sculpted wall
 							textures and metallic feature finishes, we use a wide range of techniques to
 							create surfaces that genuinely stand out. Each project is treated as its own
 							piece — no two are ever the same.
 						</p>
-						<p className="mb-8 font-sans leading-relaxed text-muted-foreground">
+						<p className="mb-8 font-sans leading-relaxed text-white/70">
 							We work across residential homes, commercial interiors, and hospitality spaces,
 							using durable polymer-modified systems that look as good in ten years as they do
 							on installation day. If you can imagine it, we can build it.

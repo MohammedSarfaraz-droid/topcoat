@@ -29,19 +29,19 @@ const WhyChooseUs = () => {
 						<h2 className="mb-6 font-serif text-3xl font-bold text-white/90">
 							Why Choose Our <span className="text-gradient-copper">Stamped Concrete</span>
 						</h2>
-						<p className="mb-4 font-sans leading-relaxed text-muted-foreground">
+						<p className="mb-4 font-sans leading-relaxed text-white/70">
 							Stamped concrete lets you get the look of natural stone, brick, or slate without
 							the cost and ongoing maintenance that comes with the real thing. It&apos;s one of
 							the most versatile outdoor surface options available, and when it&apos;s done well,
 							it&apos;s genuinely hard to tell apart from natural materials.
 						</p>
-						<p className="mb-4 font-sans leading-relaxed text-muted-foreground">
+						<p className="mb-4 font-sans leading-relaxed text-white/70">
 							We use color hardeners, integral pigments, and release agents to achieve the kind
 							of depth and variation you see in real stone. Then we seal the surface to protect
 							against staining, UV fading, and freeze-thaw damage so it stays looking good
 							through every season.
 						</p>
-						<p className="mb-8 font-sans leading-relaxed text-muted-foreground">
+						<p className="mb-8 font-sans leading-relaxed text-white/70">
 							Whether it&apos;s a patio, driveway, pool deck, or walkway, we work with you to
 							choose the right pattern and color combination for your property. Custom
 							borders and accent inlays are available for those who want something truly unique.

@@ -29,18 +29,18 @@ const WhyChooseUs = () => {
 						<h2 className="mb-6 font-serif text-3xl font-bold text-white/90">
 							Why Choose Our <span className="text-gradient-copper">Garage Floors</span>
 						</h2>
-						<p className="mb-4 font-sans leading-relaxed text-muted-foreground">
+						<p className="mb-4 font-sans leading-relaxed text-white/70">
 							Most garage floors are ignored until they crack, stain, or start to deteriorate.
 							A quality coating changes that completely. Our garage floor systems seal and
 							protect the concrete below while giving the space a clean, polished look that
 							actually makes you want to use it.
 						</p>
-						<p className="mb-4 font-sans leading-relaxed text-muted-foreground">
+						<p className="mb-4 font-sans leading-relaxed text-white/70">
 							We install coatings that handle everything a working garage throws at them —
 							hot tires, oil drips, heavy tools, and constant foot traffic. You can hose the
 							floor down and it comes up clean every time, with no scrubbing and no staining.
 						</p>
-						<p className="mb-8 font-sans leading-relaxed text-muted-foreground">
+						<p className="mb-8 font-sans leading-relaxed text-white/70">
 							From color flake broadcast systems to solid metallic finishes, we help you
 							choose the right look and build-up for your space. Installation is fast and the
 							cure time is short, so your garage is back in use before you know it.

@@ -33,19 +33,19 @@ const WhyChooseUs = () => {
 						<h2 className="mb-6 font-serif text-3xl font-bold text-white/90">
 							Why Choose Our <span className="text-gradient-copper">Epoxy Flooring</span>
 						</h2>
-					<p className="mb-4 font-sans leading-relaxed text-muted-foreground">
+					<p className="mb-4 font-sans leading-relaxed text-white/70">
 						Epoxy flooring is one of the most practical and visually impressive flooring
 						choices available today. We install seamless systems engineered to withstand
 						heavy foot traffic, machinery loads, chemical spills, and daily cleaning without
 						showing wear.
 					</p>
-					<p className="mb-4 font-sans leading-relaxed text-muted-foreground">
+					<p className="mb-4 font-sans leading-relaxed text-white/70">
 						For commercial and industrial clients, that means a floor that genuinely performs
 						under pressure while keeping maintenance costs low. For retail, hospitality, and
 						showroom clients, it means a clean, high-gloss surface that elevates the whole
 						environment and leaves a strong impression on every visitor.
 					</p>
-					<p className="mb-8 font-sans leading-relaxed text-muted-foreground">
+					<p className="mb-8 font-sans leading-relaxed text-white/70">
 						We take care of everything from concrete preparation and moisture testing through
 						to final topcoat application. Every system is spec&apos;d to match the demands of
 						your specific environment, so you get a floor that works as hard as your business

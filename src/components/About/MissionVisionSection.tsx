@@ -9,7 +9,7 @@ const MissionVisionSection = () => {
 				<h2 className="mb-6 font-serif text-3xl font-bold text-white/90">
 					Our <span className="text-gradient-copper">Mission</span>
 				</h2>
-				<p className="mb-16 font-sans text-lg leading-relaxed text-muted-foreground">
+				<p className="mb-16 font-sans text-lg leading-relaxed text-white/70">
 					To deliver premium-quality flooring and decorative concrete solutions that exceed
 					expectations, combining artistic craftsmanship with cutting-edge technology to create
 					surfaces that inspire.
@@ -25,7 +25,7 @@ const MissionVisionSection = () => {
 				<h2 className="mb-6 font-serif text-3xl font-bold text-white/90">
 					Our <span className="text-gradient-copper">Vision</span>
 				</h2>
-				<p className="font-sans text-lg leading-relaxed text-muted-foreground">
+				<p className="font-sans text-lg leading-relaxed text-white/70">
 					To be the most trusted and innovative surface finishing company — recognized for
 					transforming spaces through artistry, quality, and an unwavering commitment to
 					excellence.

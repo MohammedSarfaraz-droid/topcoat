@@ -47,12 +47,12 @@ const AboutSection = () => {
 						<h2 className="mb-6 font-serif text-4xl font-bold text-white/90 md:text-5xl">
 							Craftsmanship Meets <span className="text-gradient-copper">Innovation</span>
 						</h2>
-						<p className="mb-4 font-sans leading-relaxed text-muted-foreground">
+						<p className="mb-4 font-sans leading-relaxed text-white/70">
 							Topcoat LLC began with a passion for decorative painting and stenciled wood floors,
 							evolving into one of the region&apos;s most trusted names in stamped concrete and
 							polymer-modified surfaces.
 						</p>
-						<p className="mb-8 font-sans leading-relaxed text-muted-foreground">
+						<p className="mb-8 font-sans leading-relaxed text-white/70">
 							Through years of experimentation and artistic dedication, we&apos;ve mastered the craft of
 							transforming ordinary surfaces into extraordinary works of art — combining technical
 							excellence with unmatched creativity.
