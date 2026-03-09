@@ -1,5 +1,6 @@
 import Footer from "@/components/Layout/Footer";
 import Navbar from "@/components/Layout/Navbar";
+import BackToTop from "@/components/Layout/BackToTop";
 import CTASection from "@/components/Home/CTASection";
 import PortfolioSection from "@/components/Home/PortfolioSection";
 
@@ -12,6 +13,7 @@ const PortfolioPage = () => {
 				<CTASection />
 			</main>
 			<Footer />
+			<BackToTop />
 		</>
 	);
 };

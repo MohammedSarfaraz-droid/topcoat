@@ -1,5 +1,6 @@
 import Footer from "@/components/Layout/Footer";
 import Navbar from "@/components/Layout/Navbar";
+import BackToTop from "@/components/Layout/BackToTop";
 import CTASection from "@/components/EpoxyFlooring/CTASection";
 import Details from "@/components/EpoxyFlooring/Details";
 import HeroSection from "@/components/EpoxyFlooring/HeroSection";
@@ -20,6 +21,7 @@ const EpoxyFlooringPage = () => {
 				<CTASection />
 			</main>
 			<Footer />
+			<BackToTop />
 		</>
 	);
 };

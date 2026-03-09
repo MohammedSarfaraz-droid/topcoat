@@ -1,5 +1,6 @@
 import Footer from "@/components/Layout/Footer";
 import Navbar from "@/components/Layout/Navbar";
+import BackToTop from "@/components/Layout/BackToTop";
 import OtherServices from "@/components/Home/OtherServices";
 import CTASection from "@/components/StampedConcrete/CTASection";
 import Details from "@/components/StampedConcrete/Details";
@@ -20,6 +21,7 @@ const StampedConcretePage = () => {
 				<CTASection />
 			</main>
 			<Footer />
+			<BackToTop />
 		</>
 	);
 };

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, CheckCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
@@ -13,6 +13,9 @@ const benefits = [
 	"UV-stable pigments for lasting color integrity",
 	"Fire-resistant concrete formulations available",
 	"Custom geometric and organic patterns",
+	"Seamless waterproof barrier that protects structural integrity",
+	"Expert surface preparation for maximum adhesion and longevity",
+	"Compatible with new builds and existing renovation projects",
 ];
 
 const WhyChooseUs = () => {
@@ -26,11 +29,23 @@ const WhyChooseUs = () => {
 						<h2 className="mb-6 font-serif text-3xl font-bold text-white/90">
 							Why Choose Our <span className="text-gradient-copper">Building Facades</span>
 						</h2>
+						<p className="mb-4 font-sans leading-relaxed text-muted-foreground">
+							Your building&apos;s exterior is the first thing people see, and it deserves more than
+							a coat of paint. We design and install vertical concrete facade systems that genuinely
+							transform a structure — giving it character, depth, and a finish that holds up year
+							after year regardless of the weather.
+						</p>
+						<p className="mb-4 font-sans leading-relaxed text-muted-foreground">
+							We work with architects, property owners, and contractors to select textures,
+							colors, and systems that suit the building&apos;s design intent. Whether the goal is a
+							clean minimal finish or a bold expressive look, we have the materials and skill to
+							deliver it with precision.
+						</p>
 						<p className="mb-8 font-sans leading-relaxed text-muted-foreground">
-							Transform your building&apos;s exterior with our innovative vertical concrete finishes.
-							From textured panels to smooth modern coatings, our facade solutions combine aesthetic
-							beauty with weather-resistant durability, creating striking architectural statements
-							that stand the test of time.
+							Our polymer-modified concrete systems are lightweight, weather-resistant, and
+							built to protect the structure beneath. With over two decades of experience, we
+							know what it takes to get a facade installation done right — from surface prep
+							all the way through to final sealing.
 						</p>
 						<Button asChild className="bg-primary text-primary-foreground hover:bg-copper-light">
 							<Link href="/contact">
@@ -38,14 +53,19 @@ const WhyChooseUs = () => {
 							</Link>
 						</Button>
 					</div>
-					<div className={`space-y-4 transition-all delay-200 duration-700 ${isVisible ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"}`}>
-						<h3 className="mb-4 font-serif text-xl font-semibold text-white/90">Key Benefits</h3>
-						{benefits.map((benefit) => (
-							<div key={benefit} className="flex items-start gap-3 rounded-lg border border-[#282c33] bg-[#0d0f12] p-4">
-								<CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-								<span className="font-sans text-sm text-white/90">{benefit}</span>
-							</div>
-						))}
+					<div className={`transition-all delay-200 duration-700 ${isVisible ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"}`}>
+						<h3 className="mb-6 font-serif text-xl font-semibold text-white/90">Key Benefits</h3>
+						<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+							{benefits.map((benefit, index) => (
+								<div key={benefit} className="group relative rounded-lg bg-[#0d0f12] border border-[#282c33] p-5 transition-all duration-300 hover:border-primary/40 hover:bg-[#111316]">
+									<div className="absolute top-0 left-0 h-[2px] w-0 rounded-tl-lg bg-gradient-to-r from-primary to-transparent transition-all duration-500 group-hover:w-full" />
+									<span className="mb-3 block font-serif text-2xl font-bold text-primary/60 leading-none">
+										{String(index + 1).padStart(2, "0")}
+									</span>
+									<span className="font-sans text-sm leading-relaxed text-white/80">{benefit}</span>
+								</div>
+							))}
+						</div>
 					</div>
 				</div>
 			</div>

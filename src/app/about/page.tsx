@@ -1,5 +1,6 @@
 import Footer from "@/components/Layout/Footer";
 import Navbar from "@/components/Layout/Navbar";
+import BackToTop from "@/components/Layout/BackToTop";
 import HeroSection from "@/components/About/HeroSection";
 import StorySection from "@/components/About/StorySection";
 import MissionVisionSection from "@/components/About/MissionVisionSection";
@@ -18,6 +19,7 @@ const AboutPage = () => {
 				<CTASection />
 			</main>
 			<Footer />
+			<BackToTop />
 		</>
 	);
 };

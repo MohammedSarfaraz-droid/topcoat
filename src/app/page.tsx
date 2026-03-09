@@ -1,5 +1,6 @@
 import Footer from '@/components/Layout/Footer'
 import Navbar from '@/components/Layout/Navbar'
+import BackToTop from '@/components/Layout/BackToTop'
 import AboutSection from '@/components/Home/AboutSection'
 import CTASection from '@/components/Home/CTASection'
 import ExperienceSection from '@/components/Home/ExperienceSection'
@@ -19,6 +20,7 @@ const page = () => {
       <PortfolioSection />
       <CTASection />
       <Footer />
+      <BackToTop />
     </>
   )
 }

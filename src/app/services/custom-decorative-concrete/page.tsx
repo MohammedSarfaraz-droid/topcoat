@@ -1,5 +1,6 @@
 import Footer from "@/components/Layout/Footer";
 import Navbar from "@/components/Layout/Navbar";
+import BackToTop from "@/components/Layout/BackToTop";
 import OtherServices from "@/components/Home/OtherServices";
 import CTASection from "@/components/CustomDecorativeConcrete/CTASection";
 import Details from "@/components/CustomDecorativeConcrete/Details";
@@ -20,6 +21,7 @@ const CustomDecorativeConcretePage = () => {
 				<CTASection />
 			</main>
 			<Footer />
+			<BackToTop />
 		</>
 	);
 };

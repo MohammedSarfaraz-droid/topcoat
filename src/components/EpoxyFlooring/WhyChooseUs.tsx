@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, CheckCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
@@ -13,6 +13,9 @@ const benefits = [
 	"Rapid installation with minimal downtime for your business",
 	"UV-stable formulations that resist yellowing and fading",
 	"Custom color matching and decorative flake systems available",
+	"Self-leveling technology for a perfectly smooth finish on any substrate",
+	"Moisture-vapour barrier systems to prevent bubbling and delamination",
+	"Anti-static formulations available for electronics and cleanroom facilities",
 ];
 
 const WhyChooseUs = () => {
@@ -30,11 +33,23 @@ const WhyChooseUs = () => {
 						<h2 className="mb-6 font-serif text-3xl font-bold text-white/90">
 							Why Choose Our <span className="text-gradient-copper">Epoxy Flooring</span>
 						</h2>
-						<p className="mb-8 font-sans leading-relaxed text-muted-foreground">
-							Our industrial-grade epoxy flooring systems deliver unmatched durability, chemical
-							resistance, and visual appeal. From warehouses to showrooms, we create seamless,
-							high-performance surfaces that withstand the toughest conditions while maintaining a
-							stunning mirror-like finish.
+					<p className="mb-4 font-sans leading-relaxed text-muted-foreground">
+						Epoxy flooring is one of the most practical and visually impressive flooring
+						choices available today. We install seamless systems engineered to withstand
+						heavy foot traffic, machinery loads, chemical spills, and daily cleaning without
+						showing wear.
+					</p>
+					<p className="mb-4 font-sans leading-relaxed text-muted-foreground">
+						For commercial and industrial clients, that means a floor that genuinely performs
+						under pressure while keeping maintenance costs low. For retail, hospitality, and
+						showroom clients, it means a clean, high-gloss surface that elevates the whole
+						environment and leaves a strong impression on every visitor.
+					</p>
+					<p className="mb-8 font-sans leading-relaxed text-muted-foreground">
+						We take care of everything from concrete preparation and moisture testing through
+						to final topcoat application. Every system is spec&apos;d to match the demands of
+						your specific environment, so you get a floor that works as hard as your business
+						does for years to come.
 						</p>
 						<Button asChild className="bg-primary text-primary-foreground hover:bg-copper-light">
 							<Link href="/contact">
@@ -43,18 +58,19 @@ const WhyChooseUs = () => {
 						</Button>
 					</div>
 
-					<div
-						className={`space-y-4 transition-all delay-200 duration-700 ${
-							isVisible ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"
-						}`}
-					>
-						<h3 className="mb-4 font-serif text-xl font-semibold text-white/90">Key Benefits</h3>
-						{benefits.map((benefit) => (
-							<div key={benefit} className="flex items-start gap-3 rounded-lg border border-[#282c33] bg-[#0d0f12] p-4">
-								<CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-								<span className="font-sans text-sm text-white/90">{benefit}</span>
-							</div>
-						))}
+					<div className={`transition-all delay-200 duration-700 ${isVisible ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"}`}>
+						<h3 className="mb-6 font-serif text-xl font-semibold text-white/90">Key Benefits</h3>
+						<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+							{benefits.map((benefit, index) => (
+								<div key={benefit} className="group relative rounded-lg bg-[#0d0f12] border border-[#282c33] p-5 transition-all duration-300 hover:border-primary/40 hover:bg-[#111316]">
+									<div className="absolute top-0 left-0 h-[2px] w-0 rounded-tl-lg bg-gradient-to-r from-primary to-transparent transition-all duration-500 group-hover:w-full" />
+									<span className="mb-3 block font-serif text-2xl font-bold text-primary/60 leading-none">
+										{String(index + 1).padStart(2, "0")}
+									</span>
+									<span className="font-sans text-sm leading-relaxed text-white/80">{benefit}</span>
+								</div>
+							))}
+						</div>
 					</div>
 				</div>
 			</div>
