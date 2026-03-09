@@ -22,7 +22,7 @@ const WhyChooseUs = () => {
 	const { ref, isVisible } = useScrollAnimation<HTMLElement>();
 
 	return (
-		<section className="bg-[#14161A] py-20" ref={ref}>
+		<section className="bg-[#14161A] py-20 overflow-hidden" ref={ref}>
 			<div className="container mx-auto px-4">
 				<div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
 					<div
