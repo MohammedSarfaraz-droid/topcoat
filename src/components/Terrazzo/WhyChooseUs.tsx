@@ -58,7 +58,7 @@ const WhyChooseUs = () => {
 						<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 							{benefits.map((benefit, index) => (
 								<div key={benefit} className="group relative rounded-lg bg-[#0d0f12] border border-[#282c33] p-5 transition-all duration-300 hover:border-primary/40 hover:bg-[#111316]">
-									<div className="absolute top-0 left-0 h-[2px] w-0 rounded-tl-lg bg-gradient-to-r from-primary to-transparent transition-all duration-500 group-hover:w-full" />
+									<div className="absolute top-0 left-0 h-0.5 w-0 rounded-tl-lg bg-linear-to-r from-primary to-transparent transition-all duration-500 group-hover:w-full" />
 									<span className="mb-3 block font-serif text-2xl font-bold text-primary/60 leading-none">
 										{String(index + 1).padStart(2, "0")}
 									</span>
