@@ -35,7 +35,7 @@ const HeroSection = () => (
 					<Link href="/contact">
 						<Button
 							size="lg"
-							className="bg-primary px-8 py-6 text-base font-sans tracking-wide text-primary-foreground hover:bg-copper-light"
+							className="bg-primary px-8 py-6 text-base font-sans tracking-wide text-primary-foreground hover:bg-copper-light cursor-pointer"
 						>
 							Request a Consultation
 							<ArrowRight className="ml-2 h-5 w-5" />
@@ -45,7 +45,7 @@ const HeroSection = () => (
 						<Button
 							size="lg"
 							variant="outline"
-							className="border-primary/30 bg-[#0d0f12] px-8 py-6 text-base font-sans tracking-wide text-white hover:border-primary hover:bg-transparent"
+							className="border-primary/30 bg-[#0d0f12] px-8 py-6 text-base font-sans tracking-wide text-white hover:border-primary hover:bg-transparent cursor-pointer"
 						>
 							<Eye className="mr-2 h-5 w-5" />
 							View Our Work

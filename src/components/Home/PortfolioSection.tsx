@@ -106,7 +106,7 @@ const PortfolioSection = () => {
               key={f}
               type="button"
               onClick={() => setActive(f)}
-              className={`px-5 py-2 rounded-full text-sm font-sans font-medium transition-all ${
+              className={`px-5 py-2 rounded-full text-sm font-sans font-medium transition-all cursor-pointer ${
                 active === f
                   ? "bg-primary text-primary-foreground"
                   : "bg-secondary text-muted-foreground hover:text-white/90 hover:bg-secondary/80"

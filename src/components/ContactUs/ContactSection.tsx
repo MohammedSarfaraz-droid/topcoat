@@ -72,7 +72,7 @@ const Contact = () => {
                 rows={6}
                 className="w-full rounded-md border border-[#282c33] bg-[#0d0f12] px-3 py-2 font-sans text-sm text-white"
               />
-              <Button type="submit" size="lg" className="bg-primary hover:bg-copper-light text-primary-foreground font-sans w-full sm:w-auto px-10">
+              <Button type="submit" size="lg" className="bg-primary hover:bg-copper-light text-primary-foreground font-sans w-full sm:w-auto px-10 cursor-pointer">
                 <Send className="w-4 h-4 mr-2" />
                 Send Message
               </Button>

@@ -28,7 +28,7 @@ const CTASection = () => {
 				<Link href="/contact">
 					<Button
 						size="lg"
-						className="bg-primary px-10 py-7 text-lg font-sans tracking-wide text-primary-foreground hover:bg-copper-light"
+						className="bg-primary px-10 py-7 text-lg font-sans tracking-wide text-primary-foreground hover:bg-copper-light cursor-pointer"
 					>
 						Request a Consultation
 						<ArrowRight className="ml-2 h-5 w-5" />
