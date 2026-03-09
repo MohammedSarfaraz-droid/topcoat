@@ -5,9 +5,9 @@ import Image from "next/image";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const galleryImages = [
-	{ src: "/Images/terrazzo-interior.jpg", alt: "Luxury corporate lobby with custom terrazzo floor" },
-	{ src: "/Images/residential-floor.jpg", alt: "Modern residential interior with polished terrazzo" },
-	{ src: "/Images/commercial-epoxy.jpg", alt: "Large-scale commercial terrazzo installation" },
+	{ src: "/Images/terrazzo.jpeg", alt: "Custom terrazzo floor in a luxury commercial space" },
+	{ src: "/Images/church1.jpeg", alt: "Church sanctuary with polished decorative flooring" },
+	{ src: "/Images/church2.jpeg", alt: "Elegant terrazzo-finish flooring in a church interior" },
 ];
 
 const ProjectGallery = () => {
