@@ -56,13 +56,20 @@ const Contact = () => {
                   onChange={(e) => setForm({ ...form, phone: e.target.value })}
                   className="h-10 w-full rounded-md border border-[#282c33] bg-[#0d0f12] px-3 py-2 font-sans text-sm text-white"
                 />
-                <input
-                  type="text"
-                  placeholder="Service Interested In"
-                  value={form.service}
-                  onChange={(e) => setForm({ ...form, service: e.target.value })}
-                  className="h-10 w-full rounded-md border border-[#282c33] bg-[#0d0f12] px-3 py-2 font-sans text-sm text-white"
-                />
+                  <select
+                    value={form.service}
+                    onChange={(e) => setForm({ ...form, service: e.target.value })}
+                    required
+                    className="h-10 w-full rounded-md border border-[#282c33] bg-[#0d0f12] px-3 py-2 font-sans text-sm text-white"
+                  >
+                    <option value="" disabled>Select Service Interested In</option>
+                    <option value="Epoxy Flooring">Epoxy Flooring</option>
+                    <option value="Terrazzo">Terrazzo</option>
+                    <option value="Building Facades">Building Facades</option>
+                    <option value="Garage Floors">Garage Floors</option>
+                    <option value="Stamped Concrete">Stamped Concrete</option>
+                    <option value="Custom Decorative Concrete">Custom Decorative Concrete</option>
+                  </select>
               </div>
               <textarea
                 placeholder="Tell us about your project..."
@@ -95,15 +102,22 @@ const Contact = () => {
                 {[
                   { icon: Phone, label: siteConfig.phone, href: formatPhoneHref(siteConfig.phone) },
                   { icon: Mail, label: siteConfig.email, href: `mailto:${siteConfig.email}` },
-                  { icon: MapPin, label: siteConfig.address },
+                  { icon: MapPin, label: siteConfig.address, href: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(siteConfig.address)}` },
                   { icon: Clock, label: "Mon – Fri: 7AM – 6PM | Sat: 8AM – 2PM" },
                 ].map(({ icon: Icon, label, href }) => (
                   <div key={label} className="flex items-center gap-4 p-4 rounded-lg bg-[#14161A] border border-[#282c33]">
                     <Icon className="w-5 h-5 text-primary shrink-0" />
                     {href ? (
-                      <a href={href} className="text-white/90 hover:text-primary transition-colors font-sans text-sm">{label}</a>
+                      <a
+                        href={href}
+                        className="text-white/90 hover:text-primary transition-colors font-sans text-sm"
+                        target={Icon === MapPin ? "_blank" : undefined}
+                        rel={Icon === MapPin ? "noopener noreferrer" : undefined}
+                      >
+                        {label}
+                      </a>
                     ) : (
-                      <span className="text-white/90     font-sans text-sm">{label}</span>
+                      <span className="text-white/90 font-sans text-sm">{label}</span>
                     )}
                   </div>
                 ))}

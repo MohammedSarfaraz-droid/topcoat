@@ -90,10 +90,16 @@ const Footer = () => (
               <Mail className="w-4 h-4 text-primary" />
               {siteConfig.email}
             </a>
-            <div className="flex items-start gap-3 text-[#818898] text-sm">
+            <a
+              href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(siteConfig.address)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start gap-3 text-[#818898] hover:text-primary transition-colors text-sm"
+              aria-label="Open address in Google Maps"
+            >
               <MapPin className="w-4 h-4 text-primary mt-0.5" />
               <span>{siteConfig.address}</span>
-            </div>
+            </a>
             <div className="flex items-center gap-3 pt-2">
               <a
                 href={siteConfig.social.instagram}

@@ -79,8 +79,22 @@ const projects: Project[] = [
     type: "Decorative",
     image: "/Images/custom-home.jpeg",
     description: "Artisan copper-infused decorative finish",
-    animationDelayClass: "delay-1000",
+    animationDelayClass: "delay-800",
   },
+  {
+    name: "Church Sanctuary Flooring",
+    type: "Decorative",
+    image: "/Images/church1.jpeg",
+      description: "Eco-friendly epoxy flooring featuring recycled glass for a vibrant sanctuary finish",
+    animationDelayClass: "delay-900",
+  },
+  {
+    name: "Church Sanctuary Flooring",
+    type: "Decorative",
+    image: "/Images/church2.jpeg",
+      description: "Sustainable epoxy installation with glass aggregate, enhancing church aesthetics and durability",
+    animationDelayClass: "delay-950",
+  }
 ];
 
 const PortfolioSection = () => {
