@@ -149,12 +149,12 @@ export function MobileDrawer({ isOpen, links, onClose }: MobileDrawerProps) {
 								aria-label="Follow us on Instagram"
 								className={cn(
 									"group flex h-9 w-9 items-center justify-center rounded-sm [@media(max-height:760px)]:h-8 [@media(max-height:760px)]:w-8",
-									"border border-white/10 text-white/40",
-									"hover:border-primary/50 hover:text-primary hover:bg-primary/5",
+									"border border-white/12 bg-white/5 text-white shadow-[0_10px_24px_-18px_rgba(255,255,255,0.3)]",
+									"hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/8",
 									"transition-all duration-300"
 								)}
 							>
-								<Instagram className="size-4 group-hover:scale-110 transition-transform duration-300" />
+								<Instagram className="size-4 transition-transform duration-300 group-hover:scale-105" />
 							</a>
 							<a
 								href="https://www.facebook.com/top.coat.artistry?mibextid=ZbWKwL"
@@ -163,12 +163,12 @@ export function MobileDrawer({ isOpen, links, onClose }: MobileDrawerProps) {
 								aria-label="Follow us on Facebook"
 								className={cn(
 									"group flex h-9 w-9 items-center justify-center rounded-sm [@media(max-height:760px)]:h-8 [@media(max-height:760px)]:w-8",
-									"border border-white/10 text-white/40",
-									"hover:border-primary/50 hover:text-primary hover:bg-primary/5",
+									"border border-white/12 bg-white/5 text-white shadow-[0_10px_24px_-18px_rgba(255,255,255,0.3)]",
+									"hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/8",
 									"transition-all duration-300"
 								)}
 							>
-								<Facebook className="size-4 group-hover:scale-110 transition-transform duration-300" />
+								<Facebook className="size-4 transition-transform duration-300 group-hover:scale-105" />
 							</a>
 							<div className="h-px flex-1 bg-white/6" />
 							<a

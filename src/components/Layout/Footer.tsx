@@ -106,18 +106,18 @@ const Footer = () => (
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Follow us on Instagram"
-                className="group flex h-10 w-10 items-center justify-center rounded-sm border border-white/10 text-white/40 transition-all duration-300 hover:border-primary/50 hover:bg-primary/5 hover:text-primary"
+                className="group flex h-10 w-10 items-center justify-center rounded-sm border border-white/12 bg-white/5 text-white shadow-[0_10px_24px_-18px_rgba(255,255,255,0.3)] transition-all duration-300 hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/8"
               >
-                <Instagram className="size-4 transition-transform duration-300 group-hover:scale-110" />
+                <Instagram className="size-4 transition-transform duration-300 group-hover:scale-105" />
               </a>
               <a
                 href={siteConfig.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Follow us on Facebook"
-                className="group flex h-10 w-10 items-center justify-center rounded-sm border border-white/10 text-white/40 transition-all duration-300 hover:border-primary/50 hover:bg-primary/5 hover:text-primary"
+                className="group flex h-10 w-10 items-center justify-center rounded-sm border border-white/12 bg-white/5 text-white shadow-[0_10px_24px_-18px_rgba(255,255,255,0.3)] transition-all duration-300 hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/8"
               >
-                <Facebook className="size-4 transition-transform duration-300 group-hover:scale-110" />
+                <Facebook className="size-4 transition-transform duration-300 group-hover:scale-105" />
               </a>
             </div>
           </div>
