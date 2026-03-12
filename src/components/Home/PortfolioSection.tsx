@@ -8,6 +8,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 type PortfolioFilter = "All" | "Commercial" | "Residential" | "Industrial" | "Decorative";
 
 type Project = {
+  id: string;
   name: string;
   type: Exclude<PortfolioFilter, "All">;
   image: string;
@@ -19,6 +20,7 @@ const filters: PortfolioFilter[] = ["All", "Commercial", "Residential", "Industr
 
 const projects: Project[] = [
   {
+    id: "corporate-lobby-terrazzo",
     name: "Corporate Lobby Terrazzo",
     type: "Commercial",
     image: "/Images/terrazzo.jpeg",
@@ -26,6 +28,7 @@ const projects: Project[] = [
     animationDelayClass: "delay-0",
   },
   {
+    id: "industrial-warehouse-coating",
     name: "Industrial Warehouse Coating",
     type: "Industrial",
     image: "/Images/commercial-epoxy.jpg",
@@ -33,6 +36,7 @@ const projects: Project[] = [
     animationDelayClass: "delay-75",
   },
   {
+    id: "luxury-home-flooring",
     name: "Luxury Home Flooring",
     type: "Residential",
     image: "/Images/Lawn.jpeg",
@@ -40,6 +44,7 @@ const projects: Project[] = [
     animationDelayClass: "delay-100",
   },
   {
+    id: "metallic-epoxy-showroom",
     name: "Metallic Epoxy Showroom",
     type: "Commercial",
     image: "/Images/epoxy-flooring2.jpeg",
@@ -47,6 +52,7 @@ const projects: Project[] = [
     animationDelayClass: "delay-150",
   },
   {
+    id: "building-facade-renovation",
     name: "Building Facade Renovation",
     type: "Commercial",
     image: "/Images/Building-Facade-Renovation.jpeg",
@@ -54,6 +60,7 @@ const projects: Project[] = [
     animationDelayClass: "delay-200",
   },
   {
+    id: "designer-patio",
     name: "Designer Patio",
     type: "Decorative",
     image: "/Images/Decorative.jpeg",
@@ -61,6 +68,7 @@ const projects: Project[] = [
     animationDelayClass: "delay-300",
   },
   {
+    id: "premium-garage-coating",
     name: "Premium Garage Coating",
     type: "Residential",
     image: "/Images/Car-parking.jpeg",
@@ -68,6 +76,7 @@ const projects: Project[] = [
     animationDelayClass: "delay-500",
   },
   {
+    id: "vertical-concrete-art",
     name: "Vertical Concrete Art",
     type: "Decorative",
     image: "/Images/concrete-home.jpeg",
@@ -75,6 +84,7 @@ const projects: Project[] = [
     animationDelayClass: "delay-700",
   },
   {
+    id: "custom-surface-texture",
     name: "Custom Surface Texture",
     type: "Decorative",
     image: "/Images/custom-home.jpeg",
@@ -82,6 +92,7 @@ const projects: Project[] = [
     animationDelayClass: "delay-800",
   },
   {
+    id: "church-sanctuary-flooring-1",
     name: "Church Sanctuary Flooring",
     type: "Decorative",
     image: "/Images/church1.jpeg",
@@ -89,6 +100,7 @@ const projects: Project[] = [
     animationDelayClass: "delay-900",
   },
   {
+    id: "church-sanctuary-flooring-2",
     name: "Church Sanctuary Flooring",
     type: "Decorative",
     image: "/Images/church2.jpeg",
@@ -135,7 +147,7 @@ const PortfolioSection = () => {
         <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
           {filtered.map((project) => (
             <div
-              key={project.name}
+              key={project.id}
               className={`group relative overflow-hidden rounded-lg break-inside-avoid transition-all duration-700 ${
                 project.animationDelayClass
               } ${
