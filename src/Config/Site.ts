@@ -4,7 +4,7 @@ export const siteConfig = {
   name: "TopCoat Artistry LLC",
   description:
     "Work experience & Professional Contracting Services And started our business by doing decorative painting and stenciled wood floors. The company then expanded into decorative stamped concrete floors. Topcoat artisans experimented with polymered concrete and modified concrete to apply to vertical surfaces and ceilings; they used a variety of techniques including spraying, troweling, and brushing , we are also professionals in all types of floors such as epoxy and terrazzo works.",
-  url: "https://topcoat-llc.net",
+  url: "https://topcoat-llc.com",
   phone: "201 315 2633",
   email: "Almahairi@gmail.com",
   address: "312 Fair Lawn Ave, Fair Lawn, NJ 07410",
