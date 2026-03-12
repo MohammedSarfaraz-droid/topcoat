@@ -110,6 +110,21 @@ export function MobileDrawer({ isOpen, links, onClose }: MobileDrawerProps) {
 						href={`tel:${siteConfig.phone.replace(/\s+/g, "")}`}
 						onClick={onClose}
 						className={cn(
+							"mb-3 flex items-center justify-center gap-2.5 w-full",
+							"py-3 px-5 rounded-sm [@media(max-height:760px)]:py-2.5",
+							"border border-primary/40 text-primary bg-primary/8",
+							"text-xs font-sans font-semibold tracking-[0.16em] uppercase",
+							"hover:border-primary/60 hover:bg-primary/15 transition-colors duration-300"
+						)}
+					>
+						<Phone className="size-4" aria-hidden="true" />
+						<span>Call Now</span>
+					</Link>
+
+					<Link
+						href={`tel:${siteConfig.phone.replace(/\s+/g, "")}`}
+						onClick={onClose}
+						className={cn(
 							"flex items-center justify-center gap-2.5 w-full",
 							"py-3 px-5 rounded-sm [@media(max-height:760px)]:py-2.5",
 							"bg-primary text-primary-foreground",
@@ -121,60 +136,51 @@ export function MobileDrawer({ isOpen, links, onClose }: MobileDrawerProps) {
 						<Phone className="size-4" aria-hidden="true" />
 						<span>Get a Quote</span>
 					</Link>
+
+					<div className="mt-4 border-t border-white/6 pt-3 [@media(max-height:760px)]:mt-3 [@media(max-height:760px)]:pt-2.5">
+						<p className="mb-2 text-[10px] font-mono tracking-[0.18em] uppercase text-white/25 [@media(max-height:760px)]:mb-1.5">
+							Follow Us
+						</p>
+						<div className="flex items-center gap-3 [@media(max-height:760px)]:gap-2.5">
+							<a
+								href="https://www.instagram.com/top.coat.artistry"
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="Follow us on Instagram"
+								className={cn(
+									"group flex h-9 w-9 items-center justify-center rounded-sm [@media(max-height:760px)]:h-8 [@media(max-height:760px)]:w-8",
+									"border border-white/10 text-white/40",
+									"hover:border-primary/50 hover:text-primary hover:bg-primary/5",
+									"transition-all duration-300"
+								)}
+							>
+								<Instagram className="size-4 group-hover:scale-110 transition-transform duration-300" />
+							</a>
+							<a
+								href="https://www.facebook.com/top.coat.artistry?mibextid=ZbWKwL"
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="Follow us on Facebook"
+								className={cn(
+									"group flex h-9 w-9 items-center justify-center rounded-sm [@media(max-height:760px)]:h-8 [@media(max-height:760px)]:w-8",
+									"border border-white/10 text-white/40",
+									"hover:border-primary/50 hover:text-primary hover:bg-primary/5",
+									"transition-all duration-300"
+								)}
+							>
+								<Facebook className="size-4 group-hover:scale-110 transition-transform duration-300" />
+							</a>
+							<div className="h-px flex-1 bg-white/6" />
+							<a
+								href={`tel:${siteConfig.phone.replace(/\s+/g, "")}`}
+								className="text-[10px] font-mono tracking-wider text-white/25 transition-colors duration-300 hover:text-primary"
+							>
+								{siteConfig.phone}
+							</a>
+						</div>
+					</div>
 				</div>
 			</nav>
-
-			<div
-				style={{
-					transitionDelay: isOpen ? `${100 + (links.length + 1) * 60}ms` : "0ms",
-				}}
-				className={cn(
-					"border-t border-white/6 px-6 py-4 [@media(max-height:760px)]:px-5 [@media(max-height:760px)]:py-3",
-					"transition-all duration-300",
-					isOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-				)}
-			>
-				<p className="mb-2 text-[10px] font-mono tracking-[0.18em] uppercase text-white/25 [@media(max-height:760px)]:mb-1.5">
-					Follow Us
-				</p>
-				<div className="flex items-center gap-3 [@media(max-height:760px)]:gap-2.5">
-					<a
-						href="https://www.instagram.com/top.coat.artistry"
-						target="_blank"
-						rel="noopener noreferrer"
-						aria-label="Follow us on Instagram"
-						className={cn(
-							"group flex h-9 w-9 items-center justify-center rounded-sm [@media(max-height:760px)]:h-8 [@media(max-height:760px)]:w-8",
-							"border border-white/10 text-white/40",
-							"hover:border-primary/50 hover:text-primary hover:bg-primary/5",
-							"transition-all duration-300"
-						)}
-					>
-						<Instagram className="size-4 group-hover:scale-110 transition-transform duration-300" />
-					</a>
-					<a
-						href="https://www.facebook.com/top.coat.artistry?mibextid=ZbWKwL"
-						target="_blank"
-						rel="noopener noreferrer"
-						aria-label="Follow us on Facebook"
-						className={cn(
-							"group flex h-9 w-9 items-center justify-center rounded-sm [@media(max-height:760px)]:h-8 [@media(max-height:760px)]:w-8",
-							"border border-white/10 text-white/40",
-							"hover:border-primary/50 hover:text-primary hover:bg-primary/5",
-							"transition-all duration-300"
-						)}
-					>
-						<Facebook className="size-4 group-hover:scale-110 transition-transform duration-300" />
-					</a>
-					<div className="h-px flex-1 bg-white/6" />
-					<a
-						href={`tel:${siteConfig.phone.replace(/\s+/g, "")}`}
-						className="text-[10px] font-mono tracking-wider text-white/25 transition-colors duration-300 hover:text-primary"
-					>
-						{siteConfig.phone}
-					</a>
-				</div>
-			</div>
 		</div>
 	);
 }
