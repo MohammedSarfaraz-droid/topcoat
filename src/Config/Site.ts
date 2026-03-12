@@ -7,7 +7,7 @@ export const siteConfig = {
   url: "https://topcoat-llc.com",
   phone: "201 315 2633",
   email: "Almahairi@gmail.com",
-  address: "312 Fair Lawn Ave, Fair Lawn, NJ 07410",
+  address: "108 Fairfield Rd, Wayne NJ 07470",
   services: [
     { name: "Epoxy Flooring", slug: "epoxy-flooring" },
     { name: "Terrazzo", slug: "terrazzo" },
